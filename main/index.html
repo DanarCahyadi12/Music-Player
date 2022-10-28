@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="../main/style.css">
+</head>
+<body>
+    <!----Navbar-->
+   
+    <!----End Navbar-->
+
+    <!---Music page cards-->
+    
+    <div class="card w-96 bg-base-100 shadow-xl overflow-visible m-auto" >
+      <figure class="px-10 pt-10">
+          <img src="https://placeimg.com/400/225/arch" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title title-song">Evaluasi</h2>
+          <p class="artist">Hindia</p>
+          <div class="cont-range bg-base-300 rounded-xl">
+            <div class="progessed bg-primary rounded-xl"></div>
+          </div>
+          <div class="time-stamp w-full flex justify-between ">
+            <p class="current-time flex justify-start">00:00</p>  
+            <p class="duration flex justify-end">00:00</p>
+          </div>
+
+          <div class="card-actions flex justify-center">
+            <button class="btn btn-primary prev">
+              <span class="material-symbols-outlined">arrow_back_ios</span>
+            </button>
+
+            <button class="btn btn-primary">
+              <span class="material-symbols-outlined play-pause">play_circle</span>
+              <!-- <span class="material-symbols-outlined">pause_circle</span> -->
+            </button>
+
+            <button class="btn btn-primary next">
+              <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </button>
+            
+            <div class="cont-control-song mt-10 w-full flex justify-between">
+              <button class="btn">
+                <span class="material-symbols-outlined text-2xs control-loop">undo</span>
+              </button>
+              <!-- <span class="material-symbols-outlined text-2xs">undo</span>
+              <span class="material-symbols-outlined text-2xs">shuffle</span> -->
+              <button class="btn">
+                <span class="material-symbols-outlined text-2xs favorite">favorite</span>
+              </button>
+              <button class="btn bg-nonet">
+                <span class="material-symbols-outlined text-2xs queue">queue_music</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar w-full p-3 mt-12">
+        <div class="flex-none gap-5">
+          <div class="form-control">
+            <input type="text" placeholder="Search song" class="input input-bordered w-96" />
+          </div>
+        </div>
+      </div>
+      
+      <div class="dropdown dropdown-right mb-10 ml-2">
+        <label tabindex="0" class="btn m-1 bg-primary ">Sort by</label>
+        <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+          <li><a>A - Z</a></li>
+          <li><a>Z - A</a></li>
+        </ul>
+      </div>
+
+      <ul class="menu bg-base-100 w-full shadow mt-10 bold menu-cont">
+        <h3 class="list-song-title ml-3">List song</h3>
+      
+      </ul>
+  
+    <!---end Music page cards-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+      <script src="../main/script.js"></script>
+</body>
+</html>
